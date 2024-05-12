@@ -24,16 +24,14 @@
 
 @font-face {
   font-family: 'Poppins';
-  src: url(../public/fonts/Poppins-Regular.ttf)
-    format('truetype');
+  src: url(../public/fonts/Poppins-Regular.ttf) format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url(../public/fonts/Inter-Regular.ttf)
-    format('truetype');
+  src: url(../public/fonts/Inter-Regular.ttf) format('truetype');
   font-style: normal;
   font-weight: normal;
 }
@@ -141,8 +139,8 @@ h6 {
 /*Normalize*/
 
 :root {
-  --font-family: "Inter", sans-serif;
-  --second-family: "Poppins", sans-serif;
+  --font-family: 'Inter', sans-serif;
+  --second-family: 'Poppins', sans-serif;
   --black: #000;
   --grey-600: #7b7c88;
   --grey-500: #acadb9;

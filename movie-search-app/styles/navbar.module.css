@@ -3,9 +3,9 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background-color: inherit;
-  border: none;
-  position: relative;
+  background-color: inherit !important;
+  border: none !important;
+  position: relative !important;
 }
 
 .nav_item {

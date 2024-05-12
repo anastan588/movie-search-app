@@ -1,3 +1,81 @@
 .main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 90px;
+  gap: 40px;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  color: var(--black);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters {
+  display: flex;
+  /* gap: 16px; */
+  justify-content: space-between;
+}
+.filter_item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item_title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--black);
+}
+.input_block {
+  display: flex;
+  gap: 8px;
+}
+.item_input {
+}
+.rating_input {
+  max-width: 138px;
+}
+.filter_reset {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.reset_button {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #7b7c88;
+}
+.sort {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  gap: 8px;
+}
+
+.sort_title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--black);
+}
+
+.sort_input {
+}
+.items {
+}
+
+.pagination {
 }

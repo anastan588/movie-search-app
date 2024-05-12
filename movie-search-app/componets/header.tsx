@@ -1,6 +1,5 @@
 import styles from '../styles/header.module.css';
-import { AppShell, Burger, MantineProvider } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { AppShell, Burger} from '@mantine/core';
 import Image from 'next/image';
 import Navbar from './navbar';
 
@@ -11,10 +10,9 @@ interface HeaderProps {
 }
 
 export default function Header(props: HeaderProps) {
-  console.log(props);
   const { opened, toggle } = props;
   return (
-    <AppShell.Header className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.logo_block}>
         <Image
           className={styles.logo_image}
@@ -27,6 +25,6 @@ export default function Header(props: HeaderProps) {
       </div>
       <Burger opened={opened} onClick={toggle.toggle} hiddenFrom="sm" />
       <Navbar></Navbar>
-    </AppShell.Header>
+    </header>
   );
 }
