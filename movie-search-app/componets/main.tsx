@@ -2,11 +2,14 @@ import styles from '../styles/main.module.css';
 import {
   Button,
   Input,
+  MultiSelect,
   NativeSelect,
+  Pagination,
   Select,
   UnstyledButton,
 } from '@mantine/core';
 import { IconChevronDown } from '@tabler/icons-react';
+import FilmCard from './filmCard';
 
 export default function Main() {
   return (
@@ -16,7 +19,7 @@ export default function Main() {
         <div className={styles.filters}>
           <div className={styles.filter_item}>
             <p className={styles.item_title}>Genres</p>
-            <Select
+            <MultiSelect
               className={styles.item_input}
               placeholder="Select genre"
               data={['React', 'Angular', 'Vue', 'Svelte']}
@@ -27,7 +30,7 @@ export default function Main() {
           </div>
           <div className={styles.filter_item}>
             <p className={styles.item_title}>Release year</p>
-            <Select
+            <MultiSelect
               className={styles.item_input}
               placeholder="Select release year"
               data={['React', 'Angular', 'Vue', 'Svelte']}
@@ -39,14 +42,14 @@ export default function Main() {
           <div className={styles.filter_item}>
             <p className={styles.item_title}>Ratings</p>
             <div className={styles.input_block}>
-              <Select
+              <MultiSelect
                 className={styles.rating_input}
                 placeholder="From"
                 data={['React', 'Angular', 'Vue', 'Svelte']}
                 searchable
                 checkIconPosition="left"
               />
-              <Select
+              <MultiSelect
                 className={styles.rating_input}
                 placeholder="To"
                 data={['React', 'Angular', 'Vue', 'Svelte']}
@@ -72,8 +75,12 @@ export default function Main() {
             checkIconPosition="left"
           />
         </div>
-        <div className={styles.items}></div>
-        <div className={styles.pagination}></div>
+        <div className={styles.items}>
+          <FilmCard />
+        </div>
+        <div className={styles.pagination}>
+          <Pagination total={3} color="#9854f6" />
+        </div>
       </section>
     </main>
   );

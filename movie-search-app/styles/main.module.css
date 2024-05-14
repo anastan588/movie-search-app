@@ -17,6 +17,7 @@
 .content {
   display: flex;
   flex-direction: column;
+  gap: 24px;
 }
 
 .filters {
@@ -78,4 +79,6 @@
 }
 
 .pagination {
+  display: flex;
+  justify-content: end;
 }
